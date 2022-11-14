@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+:root{
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+    --White: hsl(0, 0%, 100%);
+    --Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --Grayish-blue: hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue: hsl(224, 21%, 14%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body{
+    background-color: var(--Very-light-grayish-blue);
+}
+
+
+main{
+    background-color: var(--White);
+    margin: 8% auto;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.header{
+    /*background-color: aqua;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1em;
+}
+
+.heading h2{
+    font-size: 23px;
+}
+
+.heading span{
+    margin-left: .5em;
+    background-color: var(--Blue);
+    padding: 0em 0.5em;
+    color: #fff;
+    border-radius: .5em;
+    font-size: 20px;
+}
+
+small{
+    color: blue;
+}
+
+/*span[title~="country"]{
+    color: blue;
+}*/
+
+.para{
+    color: var(--Grayish-blue);
+}
+
+.para:hover{
+    cursor: pointer;
+    color: var(--Blue);
+    transition: 0.3s;
+}
+
+main .container{
+    /*background-color: blue;*/
+    margin: 1em;
+    margin-top: 0;
+}
+
+.container span{
+    font-weight: bold;
+    color: black;
+}
+
+.container p{
+    letter-spacing: .5px;
+    font-size: 16px;
+    color: var(--Dark-grayish-blue);
+}
+
+.container img{
+    width: 45px;
+    margin-right: 0.5em;
+}
+
+.intro{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.mess{
+    background-color: var(--Light-grayish-blue-1);
+    padding: 1em;
+    margin: 0.5em 0;
+    border-bottom-right-radius: 1em;
+    border-top-left-radius: 1em;
+}
+
+.mess:hover{
+    cursor: pointer;
+    scale: 1.05;
+    transition: 0.3s;
+    border-radius: 2em;
+}
+
+.message{
+    background-color: var(--White);
+    margin-top: 0.5em;
+    margin-left: 3em;
+    margin-right: 3em;
+    border-radius: 0.3em;
+    text-align: justify;
+   
+    /*display: none;*/
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.message p{
+    padding: 1em;
+    border: solid lightgray .1em;
+}
+
+
+
+@media screen and (max-width:375px){
+    main{
+        width: 375px;
+    }
+
+    
+    .heading h2{
+        font-size: 16px;
+    }
+    
+    .heading span{
+        margin-left: .3em;
+        background-color: var(--Blue);
+        padding: 0.1em 0.5em;
+        color: #fff;
+        border-radius: .5em;
+        font-size: 16px;
+    }
+    
+    .para{
+        color: var(--Grayish-blue);
+        font-size: 16px;
+    }
+    
+    main .container{
+        /*background-color: blue;*/
+        margin: 1em;
+        margin-top: 0;
+    }    
+
+
+}
